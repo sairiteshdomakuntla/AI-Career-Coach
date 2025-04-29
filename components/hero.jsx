@@ -6,7 +6,8 @@ import Image from 'next/image'
 
 const HeroSection = () => {
 
-    const imageRef=useRef(null);
+// test
+  const imageRef=useRef(null);
 
     useEffect(()=>{
 
@@ -14,7 +15,7 @@ const HeroSection = () => {
 
         const handleScroll=()=>{
         const scrollPosition = window.scrollY;
-        const scrollThreshold = 100; // Adjust this value as needed
+        const scrollThreshold = 100;
 
         if(scrollPosition>scrollThreshold){
             imageElement.classList.add('scrolled');
